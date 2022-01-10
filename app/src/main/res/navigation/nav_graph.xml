@@ -24,5 +24,21 @@
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_textScanFragment"
+            app:destination="@id/textScanFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_barcodeScanFragment"
+            app:destination="@id/barcodeScanFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/barcodeScanFragment"
+        android:name="com.zorrokid.prodscanner.BarcodeScanFragment"
+        android:label="fragment_barcode_scan"
+        tools:layout="@layout/fragment_barcode_scan" />
+    <fragment
+        android:id="@+id/textScanFragment"
+        android:name="com.zorrokid.prodscanner.TextScanFragment"
+        android:label="fragment_text_scan"
+        tools:layout="@layout/fragment_text_scan" />
 </navigation>

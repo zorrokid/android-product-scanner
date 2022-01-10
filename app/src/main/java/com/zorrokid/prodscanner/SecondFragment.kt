@@ -39,6 +39,14 @@ class SecondFragment : Fragment() {
         binding.buttonSecond.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
         }
+
+        binding.scanBarcodeButton.setOnClickListener {
+            findNavController().navigate(R.id.action_SecondFragment_to_barcodeScanFragment)
+        }
+
+        binding.scanTextButton.setOnClickListener {
+            findNavController().navigate(R.id.action_SecondFragment_to_textScanFragment)
+        }
     }
 
     override fun onDestroyView() {
