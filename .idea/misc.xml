@@ -3,8 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23369565217391305" />
-        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.23369565217391305" />
+        <entry key="app/src/main/res/layout/barcode_scanner.xml" value="0.21458333333333332" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.21458333333333332" />
+        <entry key="app/src/main/res/layout/fragment_barcode_scan.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_barcode_scanner.xml" value="0.21458333333333332" />
+        <entry key="app/src/main/res/layout/fragment_first.xml" value="0.43854166666666666" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fragment_text_scan.xml" value="0.21458333333333332" />
+        <entry key="app/src/main/res/layout/frament_text_scanner.xml" value="0.21458333333333332" />
+        <entry key="app/src/main/res/layout/list_product.xml" value="0.16822916666666668" />
       </map>
     </option>
   </component>
