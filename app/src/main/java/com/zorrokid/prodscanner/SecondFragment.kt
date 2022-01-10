@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.zorrokid.prodscanner.adapter.ProductAdapter
+import com.zorrokid.prodscanner.data.DataSource
 import com.zorrokid.prodscanner.databinding.FragmentSecondBinding
 
 /**
@@ -22,9 +24,11 @@ class SecondFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
+
+
         return binding.root
 
     }

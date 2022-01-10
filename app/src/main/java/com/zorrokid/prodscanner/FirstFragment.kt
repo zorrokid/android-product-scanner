@@ -6,7 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.zorrokid.prodscanner.adapter.ProductAdapter
 import com.zorrokid.prodscanner.databinding.FragmentFirstBinding
+import com.zorrokid.prodscanner.data.DataSource
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -22,11 +25,15 @@ class FirstFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-
+    ): View {
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
-        return binding.root
+        val myDataset = DataSource().products
+        val recyclerView = binding.productList
+        recyclerView.layoutManager = LinearLayoutManager(activity)
+        recyclerView.adapter = ProductAdapter(myDataset)
+        recyclerView.setHasFixedSize(true)
 
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
